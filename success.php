@@ -3,7 +3,7 @@
 	
 $link=mysqli_connect("localhost","root","","sample");
 if($link==false){
-	die("ERROR: Could not connect." .mysqli_connect_error());
+	die("ERROR: Could not connect."  .mysqli_connect_error());
 }
 $name=mysqli_real_escape_string($link,$_POST['fullname']);
 $addr=mysqli_real_escape_string($link,$_POST['address']);
