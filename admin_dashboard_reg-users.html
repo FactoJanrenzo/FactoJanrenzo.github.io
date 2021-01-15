@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Lab Reservation</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="top-nav">
+                
+                <div class="top-left-nav">
+                    <div class="website-logo">
+                        <img src="image/wmsu_logo.png" alt="">
+                    </div>
+                    <h3>Lab Reservation</h3>
+                </div>
+                
+                <div class="top-right-nav">
+                    <div class="top-nav-link-wrapper">
+                        <a href="#" onclick="unhideModalnotif()"><i class="fas fa-bell"></i></a>
+                    </div>
+                    <div class="top-nav-link-wrapper">
+                        <a href="#" onclick="unhideModalaccount()"><i class="fas fa-user-circle"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="side-nav">
+
+                <h2>MENU</h2>
+
+                <div class="side-nav-menu-wrapper">
+                    <i class="fas fa-chart-line"></i><span>Dashboard</span>
+                    
+                    <div class="side-nav-link-wrapper">
+                        <a href="admin_dashboard_default.html" style="margin-top: 10px;">Lab Management</a>
+                    </div>
+                    <div class="side-nav-link-wrapper">
+                        <a href="admin_dashboard_reg-users.html" style="background-color: 808080;">Registered Users</a>
+                    </div>
+                </div>
+
+                <div class="side-nav-menu-wrapper">
+                    <i class="fas fa-desktop" style="margin-top: 20px;"></i><span>Monitoring</span>
+                    
+                    <div class="side-nav-link-wrapper">
+                        <a href="admin_dashboard_timer.html" style="margin-top: 10px;">Lab Timer</a>
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+
+        <main>
+            
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-name">
+                        <h4>Total Number <br> <center>of Registered Users</center></h4>
+                    </div>
+                    <div class="card-open">
+                        <span>12</span> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="for-iframe">
+                <iframe src="reg-users-table.html" style="margin-top: 40px;">
+
+                </iframe>
+            </div>
+        </main>
+        
+
+                             <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div id="modalnotif" class="modal-content-notification">
+      <p>Some text in the Modal <span style="color:red;">NOTIFICATION</span></p>
+      <span class="close" onclick="closeclick()">&times;</span>
+    </div>
+    <div id="modalaccount" class="modal-content-account">
+        
+        <p>Some text in the Modal <span style="color:red;">ACCOUNT</span></p>
+        <button onclick="location.href='index.html';">Logout</button>
+        <span class="close" onclick="closeclick()">&times;</span>
+    </div>
+  </div>
+       
+    <script src="mainscript.js"></script>
+    </body>
+</html>

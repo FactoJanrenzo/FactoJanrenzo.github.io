@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Lab Reservation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <div class="top-nav">
+                <a href="customer_page.html" style="text-decoration: none;border:none;">
+                <div class="top-left-nav">
+                    <div class="website-logo">
+                        <img src="image/wmsu_logo.png" alt="">
+                    </div>
+                    <h3>Lab Reservation</h3>
+                </div>
+                </a>
+
+                <div class="top-right-nav">
+                    <div class="top-nav-link-wrapper">
+                        <a href="#" onclick="unhideModalnotif()"><i class="fas fa-bell"></i></a>
+                    </div>
+                    <div class="top-nav-link-wrapper">
+                        <a href="#" onclick="unhideModalaccount()"><i class="fas fa-user-circle"></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div name="content">
+
+            <div name="calendar" style="float: left; padding: 10px; height: 391px;">
+                <iframe src="calendar/index.html" style="width: 500px; height: 100%;"></iframe>
+            </div>
+
+            <div style="padding-top: 10px; padding-left: 10px;">
+                Computer Laboratory
+                <select name="Computer Laboratory">
+                    <option>Com Lab1</option>
+                    <option>Com Lab2</option>
+                    <option>Com Lab3 (unavailable)</option>
+                </select>
+                Computer Seat
+                <select name="Seat">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3(unavailable)</option>
+                </select>
+                </div>
+            <div class = "card" style="float: left; height:340px;">
+            <button onclick="setvacancy()" style="display:block; margin:auto; margin-top: 10px;">View Availability</button>
+
+            <div style="padding:10px;">
+                <div id="vacancy" style="display: none;">
+                <pre id="vacancy-text">
+                    7:00-8:00 (taken)
+
+                    9:00-9:40 (taken)
+
+                    //this is empty. data insert here from mainscript.js
+                </pre>
+               
+                <div>
+                    <form action="/action_page.php">
+                        <label for="appt">Select a time:</label>
+                        <input type="time" id="appt" name="appt" >
+                        <input type="submit" value="Reserve Time" style="display:block;margin: auto; margin-top: 10px;">
+                    </form>
+                </div>
+                </div>   
+            </div>   
+
+            
+        </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div id="modalnotif" class="modal-content-notification">
+      <p>Some text in the Modal <span style="color:red;">NOTIFICATION</span></p>
+      <span class="close" onclick="closeclick()">&times;</span>
+    </div>
+    <div id="modalaccount" class="modal-content-account">
+        
+        <p>Some text in the Modal <span style="color:red;">ACCOUNT</span></p>
+        <button onclick="location.href='index.html';">Logout</button>
+        <span class="close" onclick="closeclick()">&times;</span>
+    </div>
+  </div>
+       
+    <script src="mainscript.js"></script>
+
+    </body>
+</html>
