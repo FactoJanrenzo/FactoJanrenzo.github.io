@@ -1,2 +1,2 @@
 # WMSU-Reserve-ComLab
-http://wmsureservecomlab.me
+#http://wmsureservecomlab.me
