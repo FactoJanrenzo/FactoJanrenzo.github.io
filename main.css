@@ -95,13 +95,14 @@ button:hover {
 }
 
 .header-title-wrapper h3{
+    position: absolute;
     margin: auto;
     margin-top: 9px;
     color: white;
 }
 
 #logoutbutton {
-    margin-left: 920px;
+    margin-left: 1140px;
     font-size: 13px;
 }
 
