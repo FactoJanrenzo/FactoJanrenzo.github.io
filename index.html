@@ -55,11 +55,11 @@
 
 			if (( user =="admin") && (pass =="admin123")){
 				document.getElementById("formaction").onsubmit="return true"; //enable form action to admin page
-				document.getElementById("formaction").action="admin_home.html";
+				document.getElementById("formaction").action="admin_home.html"; //redirect to ADMIN
 			}
 			else if((user=="user") && (pass=="user123")){
 				document.getElementById("formaction").onsubmit="return true"; //enable form action to customer page
-				document.getElementById("formaction").action="";
+				document.getElementById("formaction").action="customer_page.html"; //redirect to CUSTOMER
 			}
 			else {
 				document.getElementById("wrong-auth").style.display = "block";
