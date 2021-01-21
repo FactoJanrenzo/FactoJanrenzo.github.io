@@ -1,0 +1,57 @@
+.manage-lab-container {
+    margin-top: 90px;
+    margin-left: 200px;
+    width: 81%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.manage-lab-container > div{
+    margin-bottom: 20px;
+}
+
+
+.lab-choices-div {
+    display: flex;
+}
+
+.choice-text-wrapper label{
+    color: #005c99;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.choice-text-wrapper input{
+    font-size: 15px;
+    height: 30px;
+    width: 100%;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+
+
+.choice-text-wrapper select{
+    font-size: 15px;
+    height: 30px;
+    width: 75%;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+
+#optionlab {
+    margin-top: 22px;
+}
+
+.manage-lab-table-div {
+    width: 100%;
+}
+
+.lab-date-choice-div {
+    display: flex;
+}

@@ -1,0 +1,77 @@
+.pc-inventory-container {
+    margin-top: 90px;
+    margin-left: 200px;
+    width: 82%;
+    display: flex;
+}
+
+.choice-and-table-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+}
+
+.lab-and-unit-table-div {
+    width: 70%;
+    height: 100%;
+    margin-right: 20px;
+    padding: 20px;
+    background-color:white;
+}
+
+.lab-choices-div {
+    padding-bottom: 15px;
+}
+
+.display-lab-and-unit-creation {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.creation-and-edit-container {
+    padding: 10px;
+    top: 80;
+    left: 1040;
+}
+
+.choose-lab-and-unit {
+    width: 100%;
+    height: 120px;
+    padding: 10px 20px 0 20px;
+    border-radius: 10px;
+    background-color: white;
+}   
+
+.creation-and-editing-div {
+    width: 100%;
+    height: 270px;
+    padding: 10px 20px 0 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.set-time-walk-in-div {
+    width: 100%;
+    height: 370px;
+    padding: 10px 20px 0 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#selectlab, #pcno, #status {
+    width: 100%;
+}
+
+#viewbutton, #addpc{
+    margin-top: 20px;
+    float: right;
+}
+
+
+
+
+
