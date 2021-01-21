@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Computer List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="header-title-wrapper">
+                        <img src="wmsu_logo.png" alt="">
+                    </div>
+                    <div class="header-title-wrapper">
+                        <h3>WMSU Lab Reservation</h3>
+                    </div>
+                </div>
+                <div class="option-button-wrapper">
+                    <button type="submit" class="other-button" id="logoutbutton" onclick="location.href='index.html'"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </div>
+        </header> 
+        
+        <nav>
+            <div class="side-nav-container">
+                <div class="profile-container">
+                    <div class="profile-wrapper">
+                        <img src="prof-pic-sample.png" alt="">
+                    </div>
+                    <div class="profile-wrapper">
+                        <h4>ADMIN</h4>
+                    </div>
+                </div>
+                <div class="nav-link-container">
+                    <div class="nav-link-wrapper">
+                        <a href="admin_home.html"><span>Computer Lab List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_pc-inventory.html" style="background-color: #ff661a;"><span>Computer List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_manage-lab.html"><span>Manage Lab</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_reservation-list.html"><span>Reservation List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_walkin.html"><span>Walk-in</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_timer.html"><span>Lab Timer</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="pc-inventory-container">
+                <div class="lab-and-unit-table-div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PC Number</th>
+                                <th>Lab Name</th>
+                                <th>Status</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>College of Engineering Lab</td>
+                                <td>Ready to use</td>
+                                <td>
+                                    <button type="submit" class="other-button">Edit</button>
+                                    <button type="submit" class="delete-button">Delete</button>
+                                </td>
+                            </tr>                          
+                            <tr>
+                                <td>2</td>
+                                <td>College of Engineering Lab</td>
+                                <td>Ready to use</td>
+                                <td>
+                                    <button type="submit" class="other-button">Edit</button>
+                                    <button type="submit" class="delete-button">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>College of Engineering Lab</td>
+                                <td>Need to fix</td>
+                                <td>
+                                    <button type="submit" class="other-button">Edit</button>
+                                    <button type="submit" class="delete-button">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>College of Engineering Lab</td>
+                                <td>Ready to use</td>
+                                <td>
+                                    <button type="submit" class="other-button">Edit</button>
+                                    <button type="submit" class="delete-button">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="creation-and-edit-container">
+                    <div class="display-lab-and-unit-creation">
+                        <div class="choose-lab-and-unit">
+                            <div class="text-wrapper">
+                                <label for="selectlab">Select a laboratory</label>
+                                <select name="selectlab" id="selectlab">
+                                    <option value="">College of Engineering Lab</option>
+                                    <option value="">ICS Lab</option>
+                                    <option value="">Library Computer Lab</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="other-button" id="viewbutton">View</button>
+                        </div>
+
+                        <div class="creation-and-editing-div">
+                            <div class="card-title">
+                                <h4>Computer Unit</h4>
+                            </div>
+                            <div class="text-wrapper">
+                                <label for="pcno">PC Number</label>
+                                <input type="number" name="pcno" id="pcno" placeholder="Enter PC Number" required>
+                            </div>
+                            <div class="text-wrapper">
+                                <label for="pcstatus">Status</label>
+                                <select name="status" id="status">
+                                    <option value="ready_to_use">Ready to use</option>
+                                    <option value="need_to_fix">Need to fix</option>
+                                </select>
+                            </div>
+        
+                            <button type="submit" class="other-button" id="addpc">Add PC</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

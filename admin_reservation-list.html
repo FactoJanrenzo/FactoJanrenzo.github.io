@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>Reservation List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="header-title-wrapper">
+                        <img src="wmsu_logo.png" alt="">
+                    </div>
+                    <div class="header-title-wrapper">
+                        <h3>WMSU Lab Reservation</h3>
+                    </div>
+                </div>
+                <div class="option-button-wrapper">
+                    <button type="submit" class="other-button" id="logoutbutton" onclick="location.href='index.html'"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </div>
+        </header> 
+        
+        <nav>
+            <div class="side-nav-container">
+                <div class="profile-container">
+                    <div class="profile-wrapper">
+                        <img src="prof-pic-sample.png" alt="">
+                    </div>
+                    <div class="profile-wrapper">
+                        <h4>ADMIN</h4>
+                    </div>
+                </div>
+                <div class="nav-link-container">
+                    <div class="nav-link-wrapper">
+                        <a href="admin_home.html"><span>Computer Lab List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_pc-inventory.html"><span>Computer List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_manage-lab.html"><span>Manage Lab</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_reservation-list.html" style="background-color: #ff661a;"><span>Reservation List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_walkin.html"><span>Walk-in</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_timer.html"><span>Lab Timer</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="manage-lab-container">
+                <div class="lab-date-choice-div">
+                    <div class="lab-choices-div">
+                        <div class="choice-text-wrapper">
+                            <label for="selectlab2">Laboratory</label>
+                            <select name="selectlab2" id="selectlab2">
+                                <option value="">College of Engineering Lab</option>
+                                <option value="">ICS Lab</option>
+                                <option value="">Library Computer Lab</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="lab-choices-div">
+                        <div class="choice-text-wrapper">
+                            <label for="selectdate" style="display: block;">Choose Date</label>
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manage-lab-table-div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Reservation ID</th>
+                                <th>PC Number</th>
+                                <th>Lab Name</th>
+                                <th>School ID</th>
+                                <th>User name</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Reiner</td>
+                                <td>20/01/2021</td>
+                                <td>8:00am - 9:00am</td>
+                            </tr>                             
+                            <tr>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Jheo</td>
+                                <td>20/01/2021</td>
+                                <td>9:00am - 10:00am</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Mark</td>
+                                <td>20/01/2021</td>
+                                <td>11:00am-12:00nn</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Anthony</td>
+                                <td>20/01/2021</td>
+                                <td>2:00pm-3:00pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

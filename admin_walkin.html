@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Walk-in List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="header-title-wrapper">
+                        <img src="wmsu_logo.png" alt="">
+                    </div>
+                    <div class="header-title-wrapper">
+                        <h3>WMSU Lab Reservation</h3>
+                    </div>
+                </div>
+                <div class="option-button-wrapper">
+                    <button type="submit" class="other-button" id="logoutbutton" onclick="location.href='index.html'"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </div>
+        </header> 
+        
+        <nav>
+            <div class="side-nav-container">
+                <div class="profile-container">
+                    <div class="profile-wrapper">
+                        <img src="prof-pic-sample.png" alt="">
+                    </div>
+                    <div class="profile-wrapper">
+                        <h4>ADMIN</h4>
+                    </div>
+                </div>
+                <div class="nav-link-container">
+                    <div class="nav-link-wrapper">
+                        <a href="admin_home.html"><span>Computer Lab List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_pc-inventory.html"><span>Computer List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_manage-lab.html"><span>Manage Lab</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_reservation-list.html"><span>Reservation List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_walkin.html" style="background-color: #ff661a;"><span>Walk-in</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin_timer.html"><span>Lab Timer</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="pc-inventory-container">
+                <div class="lab-and-unit-table-div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PC Used</th>
+                                <th>Lab Name</th>
+                                <th>School ID</th>
+                                <th>User Name</th>
+                                <th>Year & Course</th>
+                                <th>Date</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Reiner</td>
+                                <td>BSCS 3A</td>
+                                <td>25/09/2021</td>
+                                <td>
+                                    <button type="submit" class="other-button" id="tablebuttons">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Jheo</td>
+                                <td>BSCS 3A</td>
+                                <td>26/09/2021</td>
+                                <td>
+                                    <button type="submit" class="other-button" id="tablebuttons">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Anthony</td>
+                                <td>BSCS 3A</td>
+                                <td>27/09/2021</td>
+                                <td>
+                                    <button type="submit" class="other-button" id="tablebuttons">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>College of Engineering Lab</td>
+                                <td>2018-xxxxx</td>
+                                <td>Ronald</td>
+                                <td>BSCS 3A</td>
+                                <td>28/09/2021</td>
+                                <td>
+                                    <button type="submit" class="other-button" id="tablebuttons">Edit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="creation-and-edit-container">
+                    <div class="display-lab-and-unit-creation">
+                        <div class="choose-lab-and-unit">
+                            <div class="text-wrapper">
+                                <label for="selectlab">Select a laboratory</label>
+                                <select name="selectlab" id="selectlab">
+                                    <option value="">College of Engineering Lab</option>
+                                    <option value="">ICS Lab</option>
+                                    <option value="">Library Computer Lab</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="other-button" id="viewbutton">View</button>
+                        </div>
+
+                        <div class="set-time-walk-in-div">
+                            <div class="card-title">
+                                <h4>Walk-in Registration</h4>
+                            </div>
+                            <div class="text-wrapper">
+                                <label for="pcused" id="walkin-text-input">PC Used</label>
+                                <input type="number" name="pcused" id="walkin-text-input" placeholder="Enter pc number" required>
+                            </div>
+                            <div class="text-wrapper">
+                                <label for="user-id" id="walkin-text-input">Student/Employee ID</label>
+                                <input type="text" name="user-id" id="walkin-text-input" placeholder="Enter ID" required>
+                            </div>
+                            <div class="text-wrapper">
+                                <label for="user-fullname" id="walkin-text-input">Fullname</label>
+                                <input type="text" name="user-fullname" id="walkin-text-input" placeholder="Enter fullname" required>
+                            </div>
+                            <div class="text-wrapper">
+                                <label for="pcstatus" id="walkin-text-input">Year & Course</label>
+                                <input type="text" name="walk-in_year-course" id="walkin-text-input" placeholder="Enter year & course" required>
+                            </div>
+                            <div class="text-wrapper">
+                                <label for="pcstatus">Date</label>
+                                <input type="date" name="walk-in-user-date" id="walkin-text-input" placeholder="Enter date" required>
+                            </div>
+        
+                            <button type="submit" class="other-button" id="addpc">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

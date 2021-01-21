@@ -1,0 +1,292 @@
+@import 'inventory-style.css';
+@import 'managelab-style.css';
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #808080;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin: auto;
+    border: 1 solid black;
+}
+
+thead{
+    text-align: left;
+    background-color: #004d4d;
+    color: #ff6666
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+tbody tr:nth-last-of-type(odd) {
+    background-color: #bfbfbf;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 5px solid #004d4d;
+}
+
+.other-button {
+    background-color: #008ae6;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding: 3px 15px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.delete-button {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding: 3px 15px;
+    color: white;
+    background-color: #b30000;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #660000;
+}
+
+button:hover {
+    background-color: #004d80;
+}
+
+#tablebuttons {
+    font-size: 13px;
+}
+
+/* header design */ 
+
+.header-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background-color:#004d1a;
+    box-shadow: 0 0 10px 2px;
+}
+
+.header-title {
+    display: flex;
+    padding: 5px 15px;
+}
+
+.header-title-wrapper img{
+    width: 60px;
+    height: 60px;
+    padding-right: 10px;
+}
+
+.header-title-wrapper h3{
+    margin: auto;
+    margin-top: 9px;
+    color: white;
+}
+
+#logoutbutton {
+    margin-left: 920px;
+    font-size: 13px;
+}
+
+/* side nav bar design */ 
+
+.side-nav-container {
+    position: fixed;
+    top: 70;
+    z-index: 0;
+    height: 100%;
+    width: 180px;
+    background-color: #e6e6e6;
+    box-shadow: 0 0 10px 2px;
+}
+
+.profile-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-wrapper img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    box-shadow: 0 0 7px 2px grey;
+}
+
+.profile-wrapper h4{
+    color: #005c99;
+}
+
+.nav-link-wrapper {
+    padding: 5px 0 0 10px;
+}
+
+.nav-link-wrapper a{
+    display: block;
+    padding: 10px;
+    color: #cccccc;
+    text-decoration: none;
+    background-color:#595959;
+    transition: background-color 0.3s;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.nav-link-wrapper a:hover{
+    background-color:#262626;
+}
+
+.nav-link-wrapper span{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.nav-link-wrapper i{
+    font-size: 15px;
+}
+
+/* content design*/
+
+.content-container {
+    display: flex;
+}
+
+.cards-wrapper {
+    display: block;
+    margin-top: 70px;
+    margin-left: 180px;
+    width: 770px;
+    height: 80%;
+    padding: 0 20px 20px 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    background-color: white;
+    width: 97.5%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.card-pic-div {
+    flex: 1;
+}
+.card-detail {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.card-options {
+    flex: 1;
+}
+
+.card-pic-div {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.card-pic-div img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    box-shadow: 0 0 7px 2px grey;
+}
+
+.card-text-wrapper {
+    margin-bottom: 5px;
+}
+
+.card-text-wrapper h4 {
+    color: #005c99;
+}
+
+.card-options {
+    display: flex;
+}
+
+.card-title {
+    background-color: #004d4d;
+    color: #ff6666
+}
+
+.card-title h4,h3{
+    padding: 10px;;
+}
+
+.option-button-wrapper {
+    margin: auto;
+    margin-left: 3px;
+}
+
+.card-creation-div {
+    position: fixed;
+    margin-top: 90px;
+    margin-left: 1005px;
+    padding: 0 10px 10px 10px;
+    background-color: white;
+    width: 23%;
+    height: 460px;
+    border-radius: 10px;
+}
+
+.text-wrapper label{
+    display: block;
+    color: #005c99;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.text-wrapper input{
+    font-size: 15px;
+    height: 25px;
+    width: 100%;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+.text-wrapper select, input[type=number]{
+    font-size: 15px;
+    height: 25px;
+    width: 45%;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+
+input[type=file] {
+    width: 100%;
+    font-size: 15px;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+
+.card-creation-div button {
+    float: right;
+    margin-top: 10px;
+}
+
+
+
+
+
