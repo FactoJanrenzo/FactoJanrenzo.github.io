@@ -48,7 +48,7 @@
 	<script type="text/javascript" src="login_reg_form/js/main.js"></script>
 	
 	<script>
-        alert("For the sake of demonstration:\n\nLogin as ADMIN \n   username: admin \n   passwoord: admin123\nLogin as USER \n   username: user\n   password: user123");
+        alert("For the sake of demonstration:\n\nLogin as ADMIN \n   username: admin \n   passwoord: admin123\nLogin as USER \n   username: user\n   password: user123 \nLogin as CLERK \n   username: clerk\n   password: clerk123 \nLogin as LABADMIN \n   username: labadmin\n   password: labadmin123");
 		function adminORcustomer(){
 				user = document.getElementById("username").value;
 				pass = document.getElementById("password").value;
@@ -59,7 +59,15 @@
 			}
 			else if((user=="user") && (pass=="user123")){
 				document.getElementById("formaction").onsubmit="return true"; //enable form action to customer page
-				document.getElementById("formaction").action="customer_page.html"; //redirect to CUSTOMER
+				document.getElementById("formaction").action="user_home.html"; //redirect to CUSTOMER
+			}
+			else if((user=="clerk") && (pass=="clerk123")){
+				document.getElementById("formaction").onsubmit="return true"; //enable form action to customer page
+				document.getElementById("formaction").action="clerk_home.html"; //redirect to CUSTOMER
+			}
+			else if((user=="labadmin") && (pass=="labadmin123")){
+				document.getElementById("formaction").onsubmit="return true"; //enable form action to customer page
+				document.getElementById("formaction").action="lab-admin_home.html"; //redirect to CUSTOMER
 			}
 			else {
 				document.getElementById("wrong-auth").style.display = "block";

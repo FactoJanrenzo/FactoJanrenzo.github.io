@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Account Management</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="header-title-wrapper">
+                        <img src="wmsu_logo.png" alt="">
+                    </div>
+                    <div class="header-title-wrapper">
+                        <h3>WMSU Lab Reservation</h3>
+                    </div>
+                </div>
+                <div class="option-button-wrapper">
+                    <button type="submit" class="other-button" id="logoutbutton" onclick="location.href='index.html'"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </div>
+        </header> 
+        
+        <nav>
+            <div class="side-nav-container">
+                <div class="profile-container">
+                    <div class="profile-wrapper">
+                        <img src="prof-pic-sample.png" alt="">
+                    </div>
+                    <div class="profile-wrapper">
+                        <h4>CLERK</h4>
+                    </div>
+                </div>
+                <div class="nav-link-container">
+                    <div class="nav-link-wrapper">
+                        <a href="clerk_home.html"><span>Manage Lab</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="clerk_reservation-list.html"><span>Reservation List</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="clerk_walkin.html"><span>Walk-in</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="clerk_timer.html"><span>Lab Timer</span></a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="clerk_create-acc.html" style="background-color: #ff661a;"><span>Accounts</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="create-acc-container">
+                <div class="create-acc-selection">
+                    <div class="create-acc-link-wrapper">
+                        <a href="clerk_create-acc.html" style="background-color: #ff661a;">Student & Others</a>
+                    </div>
+                </div>
+
+                <div class="acc-creation-container">
+                    <div class="registered-acc-div">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fullname</th>
+                                    <th>Username</th>
+                                    <th>Contact Email</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Juan</td>
+                                    <td>mr_juan</td>
+                                    <td>mr_juan@gmail.com</td>
+                                    <td>
+                                        <button type="submit" class="other-button">Edit</button>
+                                        <button type="submit" class="delete-button">Delete</button>
+                                    </td>
+                                </tr>                          
+                                <tr>
+                                    <td>Chu</td>
+                                    <td>mr_chu</td>
+                                    <td>mr_chu@gmail.com</td>
+                                    <td>
+                                        <button type="submit" class="other-button">Edit</button>
+                                        <button type="submit" class="delete-button">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Trey</td>
+                                    <td>mr_trey</td>
+                                    <td>mr_trey@gmail.com</td>
+                                    <td>
+                                        <button type="submit" class="other-button">Edit</button>
+                                        <button type="submit" class="delete-button">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ford</td>
+                                    <td>mr_ford</td>
+                                    <td>mr_ford@gmail.com</td>
+                                    <td>
+                                        <button type="submit" class="other-button">Edit</button>
+                                        <button type="submit" class="delete-button">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="acc-edit-reg-div">
+                        <div class="card-title">
+                            <h4>Student & Other Registration</h4>
+                        </div>
+                        <div class="acc-edit-reg-text-wrapper">
+                            <label for="user_image">User Image (optional)</label>
+                        </div>
+                        <input type="file" name="user_image" accept=".jpg" placeholder="Enter image">
+                        <div class="acc-edit-reg-text-wrapper">
+                            <label for="fullname">Fullname</label>
+                            <input type="text" name="fullname" placeholder="Enter Fullname" required>
+                        </div>
+                        <div class="acc-edit-reg-text-wrapper">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" placeholder="Enter Username" required>
+                        </div>
+                        <div class="acc-edit-reg-text-wrapper">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" placeholder="Enter Password" required>
+                        </div>
+                        <div class="acc-edit-reg-text-wrapper">
+                            <label for="contactemail">Contact Email</label>
+                            <input type="email" name="contactemail" placeholder="Enter email" required>
+                        </div>
+                        <div class="acc-edit-reg-text-wrapper">
+                            <button type="submit" class="other-button">Register User</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

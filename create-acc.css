@@ -1,0 +1,60 @@
+.create-acc-container {
+    margin-left: 200px;
+    margin-top: 90px;
+    width: 84%;
+}
+
+.create-acc-selection {
+    padding: 20px;
+    display: flex;
+}
+
+.create-acc-link-wrapper a{
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px 20px;
+    color: #cccccc;
+    text-decoration: none;
+    background-color:#595959;
+}
+
+.acc-creation-container {
+    display: flex;
+    padding: 20px;
+}
+
+.registered-acc-div {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+}
+
+.acc-edit-reg-div {
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.acc-edit-reg-text-wrapper label {
+    display: block;
+    color: #005c99;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.acc-edit-reg-text-wrapper input{
+    font-size: 15px;
+    height: 25px;
+    width: 100%;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+
+.acc-edit-reg-text-wrapper button{
+    float: right;
+    margin-top: 15px;
+}

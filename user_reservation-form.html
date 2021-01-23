@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Reservation</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="header-title-wrapper">
+                        <img src="wmsu_logo.png" alt="">
+                    </div>
+                    <div class="header-title-wrapper">
+                        <h3>WMSU Lab Reservation</h3>
+                    </div>
+                </div>
+                <div class="option-button-wrapper">
+                    <button type="submit" class="other-button" id="logoutbutton" onclick="location.href='index.html'"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </div>
+        </header> 
+        
+        <nav>
+            <div class="side-nav-container">
+                <div class="profile-container">
+                    <div class="profile-wrapper">
+                        <img src="prof-pic-sample.png" alt="">
+                    </div>
+                    <div class="profile-wrapper">
+                        <h4>CUSTOMER</h4>
+                    </div>
+                </div>
+                <div class="nav-link-container">
+                    <div class="nav-link-wrapper">
+                        <a href="user_home.html" style="background-color: #ff661a;"><span>Make Reservations</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="user-content">
+                <div class="reservation-form-container">
+                    <div class="reservation-form">
+                        <div class="select-counter">
+                            <div class="user-content-text-wrapper">
+                                <Label name="counter">Counts Left: 3</Label>  
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>PC Number</th>
+                                    <th>Time</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>8am - 9am</td>
+                                    <td>
+                                        <button type="submit"  class="other-button" style="background-color: grey;">Select</button>
+                                    </td>
+                                </tr>    
+                                <tr>
+                                    <td>1</td>
+                                    <td>9am - 10am</td>
+                                    <td>
+                                        <button type="submit"  class="other-button" style="background-color: grey;">Select</button>
+                                    </td>
+                                </tr>                           
+                                <tr>
+                                    <td>1</td>
+                                    <td>10am - 11am</td>
+                                    <td>
+                                        <button type="submit"  class="other-button" style="background-color: grey;">Select</button>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>1</td>
+                                    <td>11am - 12nn</td>
+                                    <td>
+                                        <button type="submit"  class="other-button">Select</button>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>1</td>
+                                    <td>1pm - 2pm</td>
+                                    <td>
+                                        <button type="submit"  class="other-button">Select</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2pm - 3pm</td>
+                                    <td>
+                                        <button type="submit"  class="other-button">Select</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3pm - 4pm</td>
+                                    <td>
+                                        <button type="submit"  class="other-button" >Select</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="regform-buttons">
+                            <div class="user-content-text-wrapper">
+                                <button type="submit" style="margin-left: 40px;" 
+                                class="other-button" onclick="location.href = 'user_home.html';"><i class="fas fa-chevron-left"></i> Back</button>
+                            </div>
+                            <div class="user-content-text-wrapper">
+                                <button type="submit" class="other-button" onclick="location.href = 'user_made-reservation.html';">Confirm</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

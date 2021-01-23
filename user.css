@@ -1,0 +1,96 @@
+.user-content-receipt-form {
+    display: flex;
+    width: 85%;
+    margin-top: 90px;
+    margin-left: 190px;
+}
+
+.user-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 90px;
+    margin-left: 190px;
+}
+
+.reservation-validation-form {
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.reservation-validation-form h1{
+    padding: 3px 10px;
+    background-color: #004d4d;
+    color: #ff6666
+}
+
+.choose-date-and-lab {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-content-text-wrapper {
+    padding-right: 50px;
+}
+
+.user-content-text-wrapper select {
+    font-size: 15px;
+    height: 25px;
+    width: 100%;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+
+.user-content-text-wrapper Label {
+    display: block;
+    color: #005c99;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.user-content-text-wrapper input {
+    font-size: 15px;
+    height: 25px;
+    width: 100%;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background-color: #cccccc;
+}
+
+.user-content-text-wrapper button {
+    margin-top: 18px;
+}
+
+.show-available-seat {
+    background-color: white;
+    padding: 20px;
+}
+
+.reservation-form-container {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+}
+
+#labelforrescode{
+    color: #005c99;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.reservation-validation-form span {
+    font-size: 20px;
+    color: #005c99;
+}
+
+.regform-buttons {
+    display: flex;
+    justify-content: space-between;
+}
