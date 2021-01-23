@@ -54,8 +54,20 @@
         </nav>
 
         <main>
-            <div class="pc-inventory-container">
-                <div class="lab-and-unit-table-div">
+            <div class="manage-lab-container">
+                <div class="lab-choices-div">
+                    <div class="choice-text-wrapper">
+                        <label for="selectlab2">Laboratory</label>
+                        <select name="selectlab2" id="selectlab2">
+                            <option value="">College of Engineering Lab</option>
+                        </select>
+                    </div>
+                    <div class="choice-text-wrapper">
+                        <button type="submit" id="optionlab" onclick="location.href = 'admin_disable.html';" class="delete-button">Disable this Lab</button>
+                    </div>
+                </div>
+
+                <div class="manage-lab-table-div">
                     <table>
                         <thead>
                             <tr>
@@ -71,17 +83,15 @@
                                 <td>College of Engineering Lab</td>
                                 <td>Ready to use</td>
                                 <td>
-                                    <button type="submit" class="other-button">Edit</button>
-                                    <button type="submit" class="delete-button">Delete</button>
+                                    <button type="submit"  class="delete-button">Disable this PC</button>
                                 </td>
-                            </tr>                          
+                            </tr>                             
                             <tr>
                                 <td>2</td>
                                 <td>College of Engineering Lab</td>
                                 <td>Ready to use</td>
                                 <td>
-                                    <button type="submit" class="other-button">Edit</button>
-                                    <button type="submit" class="delete-button">Delete</button>
+                                    <button type="submit"  class="delete-button">Disable this PC</button>
                                 </td>
                             </tr>
                             <tr>
@@ -89,8 +99,7 @@
                                 <td>College of Engineering Lab</td>
                                 <td>Need to fix</td>
                                 <td>
-                                    <button type="submit" class="other-button">Edit</button>
-                                    <button type="submit" class="delete-button">Delete</button>
+                                    <button type="submit" class="other-button">Enable this PC</button>
                                 </td>
                             </tr>
                             <tr>
@@ -98,44 +107,11 @@
                                 <td>College of Engineering Lab</td>
                                 <td>Ready to use</td>
                                 <td>
-                                    <button type="submit" class="other-button">Edit</button>
-                                    <button type="submit" class="delete-button">Delete</button>
+                                    <button type="submit"  class="delete-button">Disable this PC</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-
-                <div class="creation-and-edit-container">
-                    <div class="display-lab-and-unit-creation">
-                        <div class="choose-lab-and-unit">
-                            <div class="text-wrapper">
-                                <label for="selectlab">Select a laboratory</label>
-                                <select name="selectlab" id="selectlab">
-                                    <option value="">College of Engineering Lab</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="other-button" id="viewbutton">View</button>
-                        </div>
-
-                        <div class="creation-and-editing-div">
-                            <div class="card-title">
-                                <h4>Computer Unit</h4>
-                            </div>
-                            <div class="text-wrapper">
-                                <label for="pcno">PC Number</label>
-                                <input type="number" name="pcno" id="pcno" placeholder="Enter PC Number" required>
-                            </div>
-                            <div class="text-wrapper">
-                                <label for="pcstatus">Status</label>
-                                <select name="status" id="status">
-                                    <option value="ready_to_use">Ready to use</option>
-                                    <option value="need_to_fix">Need to fix</option>
-                                </select>
-                            </div>        
-                            <button type="submit" class="other-button" id="addpc">Add PC</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
